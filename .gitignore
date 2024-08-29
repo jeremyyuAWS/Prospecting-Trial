@@ -1,0 +1,14 @@
+.env
+agents.py
+apollocompanies.py
+apolloworks.py
+apollotest.py
+apolloretest.py
+*.json
+ss.md
+/stsample
+datafilter.py
+framergptcall.py
+main.py
+__pycache__
+.streamlit/secrets.toml
