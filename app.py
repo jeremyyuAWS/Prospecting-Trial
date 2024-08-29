@@ -13,6 +13,7 @@ query = st.text_input("Enter Your Query Here")
 buttonBool = st.button("Submit Query")
 
 
+
 if buttonBool and query:
     print("Step 1 - user query")
     with st.spinner("Researching Target Audience...."):
@@ -40,7 +41,9 @@ if buttonBool and query:
 
             writeToFile(filtered_data, "output")
 
-
+    if target_audience:
+        with st.expander("Want to see the Target Customer Persona Report we built for you ?"):
+            st.markdown(target_audience)
 
     #Streamlit UI
     st.markdown("""
