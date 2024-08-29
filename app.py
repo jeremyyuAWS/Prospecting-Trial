@@ -6,7 +6,7 @@ import json
 import streamlit as st
 
 
-print("Step 1 - user query")
+
 demo_page_config()
 lyzr_demo_start(main=True)
 query = st.text_input("Enter Your Query Here")
@@ -14,6 +14,7 @@ buttonBool = st.button("Submit Query")
 
 
 if buttonBool and query:
+    print("Step 1 - user query")
     with st.spinner("Researching Target Audience...."):
         target_audience = askLyzrAgent(query)
         print("Step 2 - target persona: " + target_audience)
