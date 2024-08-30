@@ -41,7 +41,7 @@ if buttonBool and query:
             print(json.dumps(filtered_data, indent=4))
 
             # Check if the filtered data is empty and re-run searchPeople if needed
-            if not filtered_data["people"]:
+            while not filtered_data["people"]:
                 print("Filtered data is empty. Re-running searchPeople...")
                 with st.spinner("Reprocessing data..."):
                     data_dict_for_apollo = getDict(target_audience)
