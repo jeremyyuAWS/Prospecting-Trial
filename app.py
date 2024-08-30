@@ -44,6 +44,8 @@ if buttonBool and query:
             if not filtered_data["people"]:
                 print("Filtered data is empty. Re-running searchPeople...")
                 with st.spinner("Reprocessing data..."):
+                    data_dict_for_apollo = getDict(target_audience)
+                    data_dict_for_apollo_as_dict = json.loads(data_dict_for_apollo)
                     data_in_json = searchPeople(data_dict_for_apollo_as_dict)
                     filtered_data = filterData(data_in_json)
                     print("Reattempted Filtered data: ")
