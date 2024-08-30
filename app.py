@@ -9,10 +9,8 @@ import streamlit as st
 
 demo_page_config()
 lyzr_demo_start(main=True)
-query = st.text_input("Enter Your Query Here")
-buttonBool = st.button("Submit Query")
-
-
+query = st.text_input("Enter Your Product Details Here")
+buttonBool = st.button("Generate Prospects")
 
 if buttonBool and query:
     print("Step 1 - user query")

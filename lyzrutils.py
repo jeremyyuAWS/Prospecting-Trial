@@ -39,6 +39,6 @@ def lyzr_demo_start(main = False):
         # App title and introduction
         st.title("AI Prospect Generator")
         st.markdown("### Welcome to the AI Prospect Generator!")
-        st.markdown("Generate prospects with just your product description")
+        st.markdown("Effortlessly generate targeted prospects using just your product description.")
         # st.markdown("#### (Start with an emoji here) Clear short instruction")
-        st.caption('Note: Products with a huge audience naturally have higher prospects!')
+        st.caption('Note: Products with a broad appeal tend to yield more prospects.')
